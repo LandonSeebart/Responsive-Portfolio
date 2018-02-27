@@ -4,26 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <title>Contact | Landon Seebart</title>
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </head>
     
-<body>
-  <nav class="navbar navbar-default container">
+<body class="page-body">
+  <nav class="navbar navbar-default container top-nav">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+        <button type="button" class="navbar-toggle hamburger" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Landon Seebart</a>
+        <a class="navbar-brand logo" href="#">Landon Seebart</a>
       </div> 
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse menu-links">
         <ul class="navlinks nav navbar-nav navbar-right">
           <li><a href="index.html">About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
@@ -33,35 +33,29 @@
     </div>
   </nav>
 
-  <div id="main-container" class="container">
+  <div class="container main-container">
     <div class="row">
-      <div class="main-section col-sm-8">
+      <div class="main-section col-8 col-m-8">
         <div class="panel panel-default">
           <div class="panel-body">
-            <h1>Contact</h1>
+            <h1"all-text just-headers just-h1">Contact</h1>
        
-            <form id="contact-form">
-                <ul>
-                  <li>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-                  </li>
-                  <li>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-                  </li>
-                  <li>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required="required"></textarea>
-                  </li>
-                </ul>
+            <form class="contact-form">
+                <fieldset class="contact-form-fieldset">
+                    <label class="contact-form-element" for="name">Name</label>
+                    <input class="contact-form-element" type="text" id="name" name="name" placeholder="John Smith" required="required">
+                    <label class="contact-form-element" for="email">Email</label>
+                    <input class="contact-form-element" type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+                    <label class="contact-form-element" for="message">Message</label>
+                    <textarea class="contact-form-element" id="message" name="message" required="required"></textarea>
+                </fieldset>
                 <input type="submit">
             </form> 
           </div>
         </div>
       </div>
         
-      <div class="col-sm-4 sidebar">
+      <div class="col-m-4 col-4 sidebar">
         <div class="panel panel-default">
           <div id="connect" class="panel-body">
             <h2>Connect with me</h2>
@@ -79,8 +73,8 @@
 
   <footer>
     <div class="container">
-      <div class = "row">
-        <div class = col-sm-12>
+      <div class="row">
+        <div class="col-12">
           Copyright &copy; 
         </div>
       </div>
